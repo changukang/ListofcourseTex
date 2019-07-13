@@ -1,0 +1,50 @@
+\documentclass{listcourse}
+\author{John} %your name goes here
+\date{Jul. 2019} %date of the document
+\title{List of Courses} %your title goes here
+
+\begin{document}
+
+\maketitle %ommit, if you don't want your title to appear on the document.
+
+\begin{intro}
+	...your content of the intro goes here
+\end{intro}
+
+
+\section*{Computer Science}
+
+
+%use addCourse environment with 
+%\begin{addCourse}{__Title of the Course__}{__Course Number__}
+\begin{addCourse}{Theory of Computation	}{COSE215}
+	...your learning experience for the course goes here.
+\end{addCourse}
+
+
+%you can add two course title and number on the environment. The second course title and number must be closed in '[]' since those are optional parameter for the environment.
+\begin{addCourse}{Data Structure}{COSE213}[Algorithm][COSE214]
+Covered basic notions and topics of Data Structure and Algorithm with \textit{Introduction to algorithms, CLRS}.
+\end{addCourse}
+
+
+
+%you may also use \addCourseTitle command that typesets the course title and number.
+% in the form of \addCourseTitle{__Title of the Course__}{__Course Number__}
+\noindent Also, took following courses; \addCourseTitle{Digital Logic Design}{COSE221}, \addCourseTitle{Databases}{COSE371}.
+
+
+
+\section*{Philosophy}
+
+\begin{addCourse}{Symbolic Logic}{PHIL209}
+Learned principles of propostional logic, first order logic formally including some meta logical theorem of them. 
+\end{addCourse}
+
+
+
+
+
+
+
+\end{document}
